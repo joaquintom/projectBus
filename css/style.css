@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;  
+    width: 100%;
+}
+
+/*mobile first*/
+@media (max-width: 760px){
+#barraBuscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+    padding: 250px 0px 0px 0px;
+    width: 65%;
+}
+
+#resultadoColectivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    padding-top: 20px;
+}
+
+}
+
+
+/*Tablet*/
+@media (min-width: 761px) and (max-width:1023px) {
+
+
+    #barraBuscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: auto;
+        padding: 250px 0px 0px 0px;
+        width: 40%;
+    }
+    
+    #resultadoColectivo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin: auto;
+        padding-top: 20px;
+    }
+
+
+}
+
+
+
+/*DESKTOP*/
+@media (min-width:1024px){
+
+.imgColectivo{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 120px;
+
+}
+
+    #barraBuscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: auto;
+        padding: 30px 0px 0px 0px;
+        width: 30%;
+    }
+    
+    #resultadoColectivo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin: auto;
+        padding-top: 20px;
+    }
+
+}
