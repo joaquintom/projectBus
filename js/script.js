@@ -1,13 +1,14 @@
 
 
-let horarios10 = ["4:14", "5:14", "6:14", "7:14", "7:14"];
-let horarios20 = ["5:00", "5:40", "6:00"];
+const horarios10 = ["4:14", "5:14", "6:14", "7:14", "7:14"];
+const horarios20 = ["5:00", "5:40", "6:00"];
+
 
 
 const colectivos = [
 
-    {id:1, linea: 10, horario: horarios10 },
-    {id:2, linea: 20, horario: horarios20 },
+    {id:1, linea: 10, horario: horarios10},
+    {id:2, linea: 20, horario: horarios20},
     {id:3, linea: 21},
     {id:4, linea: 50},
     {id:5, linea: 51},
@@ -29,29 +30,29 @@ const colectivos = [
         resultado.innerHTML = "";
 
             const eleccion = elegirColectivo.value;
-             for (let colectivo of colectivos) {
+                
+                for (let colectivo of colectivos) {
                
                 let lineaTransporte = colectivo.linea;
                 let horariosTransporte = colectivo.horario;
-                
-                    if (eleccion.includes(lineaTransporte)) {
-                            resultado.innerHTML += `
-                  
-                                <div>
-                                    <h5>Linea de colectivo: ${colectivo.linea}</h5>
-                                    <p class="horariosBondi">${colectivo.horario}</p>  
-                                    
-                                </div>
-                                    `;            
-                                
-                            console.log('>>>',lineaTransporte, horariosTransporte)
-                            } 
+
+               
+                if (eleccion.includes(lineaTransporte)) {
                             
-                }            
-        
-                if (resultado.innerHTML === "") {
+                        horariosTransporte.forEach((index, item) =>{
+                            console.log(item,index)//recorriendo el array
+                        
+                        resultado.innerHTML =`
+                            <p>${horariosTransporte}</p>
+                        `
+                        })
+                    } 
+                
+                } 
+                
+                if (resultado.innerHTML === "" || lineaTransporte != 10,20,21,50,51,55 ) {
                         resultado.innerHTML += `
-                        <p>Linea de Colectivo no encontrada...</p>
+                        <p class="mensajeError"><strong>Ups!</strong> Por favor, ingrese una línea de colectivo valida.</p>
                         `;
                 }
     
