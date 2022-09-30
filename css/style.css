@@ -14,19 +14,18 @@ body{
         margin: auto;
         padding-top: 100px;
       
-    
     }
 
 
     #barraBuscador{
     
         display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
     
-    margin: auto;
-    padding: 20px 0px 0px 0px;
-    width: 65%;
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+        width: 65%;
     }
 
     .mensajeError{
@@ -42,6 +41,52 @@ body{
         padding-top: 20px;
     }
 
+    
+    .botonGoBack{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 20px;
+    }
+
+
+    #btnIda{
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+        margin: 5px;
+        padding: 25px 20px;
+        border-radius: 50%;
+    }
+
+    .textIda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #btnVuelta{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+        padding: 25px 10px;
+        border-radius: 50%;       
+    }
+
+    .textVuelta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 }
 
 
@@ -54,8 +99,6 @@ body{
         place-items: center;
         margin: auto;
         padding-top: 100px;
-      
-    
     }
     
 
@@ -82,6 +125,53 @@ body{
         padding-top: 20px;
     }
 
+    
+    .botonGoBack{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 20px;
+    }
+
+
+    #btnIda{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+        padding: 25px 20px;
+        border-radius: 50%;
+    }
+
+    .textIda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #btnVuelta{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+        padding: 25px 10px;
+        border-radius: 50%;       
+}
+
+.textVuelta{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+
 
 }
 
@@ -90,12 +180,12 @@ body{
 /*DESKTOP*/
 @media (min-width:1024px){
 
-.imgColectivo{
- 
-    display: grid;
-    place-items: center;
-    margin: auto;
-    padding-top: 120px;
+    .imgColectivo{
+    
+        display: grid;
+        place-items: center;
+        margin: auto;
+        padding-top: 120px;
 
 }
 
@@ -103,15 +193,15 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        
+            
         margin: auto;
         padding: 30px 0px 0px 0px;
         width: 30%;
-    }
+}
 
-    .mensajeError{
-        font-size: 16px;
-    }
+     .mensajeError{
+         font-size: 16px;
+     }
     
     #resultadoColectivo{
         display: flex;
@@ -122,14 +212,49 @@ body{
         padding-top: 20px;
     }
 
-    .horariosBondi{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        border: 5px;
-        background-color: aquamarine;
-    }
+    .botonGoBack{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 20px;
+}
+
+
+    #btnIda{
+        
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+        margin: 5px;
+        padding: 25px 20px;
+        border-radius: 50%;
+}
+
+.textIda{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+}
+
+#btnVuelta{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+        padding: 25px 10px;
+        border-radius: 50%;       
+}
+
+.textVuelta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
 
 }
